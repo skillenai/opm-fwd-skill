@@ -1,6 +1,6 @@
 {
   "name": "opm-fwd",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "US federal workforce data — hires, separations, and headcount from the OPM Federal Workforce Data (FWD) API. Public, no API key required.",
   "author": {
     "name": "Jared Rand",

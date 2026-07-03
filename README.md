@@ -50,6 +50,8 @@ python3 scripts/netflow.py --start 2024-01 --end 2026-05
 | `scripts/fwd.py` | API client + local Parquet cache. `list` / `latest` / `download` / `schema` / `head`. Importable (`fwd.load(dataset, year, month)`). |
 | `scripts/netflow.py` | Build an accessions−separations net-flow time series over a month range, with filters and group-by. |
 | `scripts/lookup.py` | Discover the codes/values of any column (occupational series, agencies, separation categories) for a month. |
+| `scripts/pay.py` | Count-weighted pay percentiles (`annualized_adjusted_basic_pay`) by any grouping — role, agency, age. |
+| `scripts/rates.py` | Separation-rate time series by category — voluntary quits vs involuntary RIF vs retirements, as annualized % of headcount. |
 
 Run any script with `--help`. Downloads are cached under `~/.cache/opm-fwd/` (override with `$OPM_FWD_CACHE`).
 
