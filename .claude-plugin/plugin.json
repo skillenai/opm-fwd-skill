@@ -1,0 +1,13 @@
+{
+  "name": "opm-fwd",
+  "version": "0.1.0",
+  "description": "US federal workforce data — hires, separations, and headcount from the OPM Federal Workforce Data (FWD) API. Public, no API key required.",
+  "author": {
+    "name": "Jared Rand",
+    "url": "https://github.com/chiefastro"
+  },
+  "homepage": "https://github.com/skillenai/opm-fwd-skill",
+  "repository": "https://github.com/skillenai/opm-fwd-skill",
+  "license": "MIT",
+  "keywords": ["opm", "federal-workforce", "labor-market", "government-data", "no-auth"]
+}
