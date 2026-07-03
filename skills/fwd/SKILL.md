@@ -83,7 +83,19 @@ python3 scripts/lookup.py separations 2026 5 separation --top 20     # separatio
 python3 scripts/lookup.py accessions 2026 5 agency --top 40
 ```
 
-### 5. Custom analysis in Python
+### 5. Pay percentiles and separation rates
+
+```bash
+# Count-weighted pay percentiles by role (new-hire pay from accessions)
+python3 scripts/pay.py accessions 2026 5 --series 2210,1550,1560 --by occupational_series
+
+# How people leave: quit vs RIF vs retirement rate over time (annualized % of headcount)
+python3 scripts/rates.py --start 2024-01 --end 2026-05 --series 2210,1550,1560 --categories SC,SH,SD
+```
+
+`pay.py` weights `annualized_adjusted_basic_pay` by `count` (base pay incl. locality, excl. bonus/TSP). `rates.py` splits separations into voluntary quits (`SC`), involuntary RIF (`SH`), and retirements (`SD`) — the difference between "stable" and "stuck".
+
+### 6. Custom analysis in Python
 
 ```python
 import sys; sys.path.insert(0, "scripts")
